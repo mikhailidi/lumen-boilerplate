@@ -37,7 +37,7 @@ RUN apt-get install -y \
 
 # Install NPM and Node.js
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get install -y nodejs 
+RUN apt-get install -y nodejs
 RUN apt-get install -y mysql-client
 
 #------------- FPM & Nginx configuration ----------------------------------------------------
