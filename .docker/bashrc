@@ -1,0 +1,21 @@
+export PS1="🐋 \[\e[36m\]\h\[\e[m\] \[\e[32m\]\w\[\e[m\] \[\e[31m\]\\$\[\e[m\] "
+alias ll="ls -alF"
+export HISTSIZE=""
+
+alias art="/var/www/html/artisan"
+alias phpunit="/var/www/html/vendor/bin/phpunit"
+alias migrate="/var/www/html/artisan migrate"
+alias fresh="/var/www/html/artisan migrate:fresh"
+alias rollback="/var/www/html/artisan migrate:rollback"
+alias seed="/var/www/html/artisan db:seed"
+alias autoload="composer dumpautoload"
+alias install="composer install"
+alias routes="/var/www/html/artisan route:list"
+alias hg="history | grep"
+alias root="cd /var/www/html/"
+alias ..="cd .."
+alias phpreload='pgrep php | xargs kill -9'
+
+if [ -f /var/www/html/.bashrc ]; then
+    . /var/www/html/.bashrc
+fi
