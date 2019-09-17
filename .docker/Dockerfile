@@ -72,7 +72,7 @@ ADD .docker/config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 #------------- Container Config ---------------------------------------------------------------
 
-# Load bashsrc file inluding aliases
+# Load bashrc file including aliases
 COPY .docker/bashrc /root/.bashrc
 
 # Expose port 80
